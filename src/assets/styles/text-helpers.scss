@@ -1,0 +1,124 @@
+/** Fonts **/
+$montserrat-black: 'bindy-montserrat-black';
+$montserrat-black-italic: 'bindy-montserrat-black-italic';
+$montserrat-bold: 'bindy-montserrat-bold';
+$montserrat-bold-italic: 'bindy-montserrat-bold-italic';
+$montserrat-extra-bold: 'bindy-montserrat-extra-bold';
+$montserrat-extra-bold-italic: 'bindy-montserrat-extra-bold-italic';
+$montserrat-extra-light: 'bindy-montserrat-extra-light';
+$montserrat-extra-light-italic: 'bindy-montserrat-extra-light-italic';
+$montserrat-medium: 'bindy-montserrat-medium';
+$montserrat-medium-italic: 'bindy-montserrat-medium-italic';
+$montserrat: 'bindy-montserrat';
+$montserrat-italic: 'bindy-montserrat-italic';
+$montserrat-semibold: 'bindy-montserrat-semibold';
+$montserrat-semibold-italic: 'bindy-montserrat-semibold-italic';
+$montserrat-thin: 'bindy-montserrat-thin';
+$montserrat-thin-italic: 'bindy-montserrat-thin-italic';
+
+.data {
+  &-xxs {
+    &-medium {
+      //styleName: Data/data-xxs/medium;
+      font-family: $montserrat-medium;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 12px;
+      letter-spacing: 0.01em;
+      text-align: center;
+    }
+
+    &-bold {
+      //styleName: Data/data-xxs/bold;
+      font-family: $montserrat-medium;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 12px;
+      letter-spacing: 0.01em;
+      text-align: center;
+    }
+  }
+
+  &-sm {
+    &-medium {
+      /* Data/data-sm/medium */
+      font-family: $montserrat-medium;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.01em;
+    }
+  }
+  &-md {
+    &-medium {
+      font-family: $montserrat-medium;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.01em;
+      text-align: left;
+    }
+
+    &-bold {
+      font-family: $montserrat-medium;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &-lg {
+    &-bold {
+      //styleName: Data/data-lg/bold;
+      font-family: $montserrat-medium;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.01em;
+      text-align: left;
+    }
+  }
+}
+
+.title {
+  &-md {
+    &-medium {
+      //styleName: Title/title-md;
+      font-family: $montserrat-medium;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+}
+
+.button {
+  &-xxs {
+    font-family: $montserrat-medium;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+    /* or 145% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+
+  &-md {
+    font-family: $montserrat-medium;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,21 @@
+@import 'colors.scss';
+@import 'icons.scss';
+@import 'fonts.scss';
+@import 'text-helpers';
+
+html {
+  box-sizing: border-box;
+}
+
+//ESTUDIAR SELECTORES
+* {
+  font-family: $montserrat-medium;
+  letter-spacing: 0.01em;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

@@ -1,0 +1,50 @@
+// Ruta tipografía
+// -------------------------
+
+$file-path-montserrat: '/fonts/montserrat/';
+
+// Font-face
+// -------------------------
+
+@mixin san-font-face($font-family-name, $font-path, $file-path, $file-name) {
+  @font-face {
+    font-family: $font-family-name;
+    src: url('#{$font-path}#{$file-path}#{$file-name}.otf');
+  }
+}
+
+@mixin load-fonts-assets($font-path) {
+  @include san-font-face(bindy-montserrat-black, $font-path, $file-path-montserrat, 'Montserrat-Black');
+  @include san-font-face(bindy-montserrat-black-italic, $font-path, $file-path-montserrat, 'Montserrat-BlackItalic');
+  @include san-font-face(bindy-montserrat-bold, $font-path, $file-path-montserrat, 'Montserrat-Bold');
+  @include san-font-face(bindy-montserrat-bold-italic, $font-path, $file-path-montserrat, 'Montserrat-BoldItalic');
+  @include san-font-face(bindy-montserrat-extra-bold, $font-path, $file-path-montserrat, 'Montserrat-ExtraBold');
+  @include san-font-face(
+    bindy-montserrat-extra-bold-italic,
+    $font-path,
+    $file-path-montserrat,
+    'Montserrat-ExtraBoldItalic'
+  );
+  @include san-font-face(bindy-montserrat-extra-light, $font-path, $file-path-montserrat, 'Montserrat-ExtraLight');
+  @include san-font-face(
+    bindy-montserrat-extra-light-italic,
+    $font-path,
+    $file-path-montserrat,
+    'Montserrat-ExtraLightItalic'
+  );
+  @include san-font-face(bindy-montserrat-medium, $font-path, $file-path-montserrat, 'Montserrat-Medium');
+  @include san-font-face(bindy-montserrat-medium-italic, $font-path, $file-path-montserrat, 'Montserrat-MediumItalic');
+  @include san-font-face(bindy-montserrat, $font-path, $file-path-montserrat, 'Montserrat-Regular');
+  @include san-font-face(bindy-montserrat-italic, $font-path, $file-path-montserrat, 'Montserrat-RegularItalic');
+  @include san-font-face(bindy-montserrat-semibold, $font-path, $file-path-montserrat, 'Montserrat-SemiBold');
+  @include san-font-face(
+    bindy-montserrat-semibold-italic,
+    $font-path,
+    $file-path-montserrat,
+    'Montserrat-SemiBoldItalic'
+  );
+  @include san-font-face(bindy-montserrat-thin, $font-path, $file-path-montserrat, 'Montserrat-Thin');
+  @include san-font-face(bindy-montserrat-thin-italic, $font-path, $file-path-montserrat, 'Montserrat-ThinItalic');
+}
+
+@include load-fonts-assets('..');

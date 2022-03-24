@@ -1,0 +1,7 @@
+{
+  "bundlerOptions": {
+    "entryFile": "./src/assets/styles/bindy-styles.scss",
+    "rootDir": "./src/sbc-styles",
+    "outFile": "./dist/assets/styles/bindy-styles.scss"
+  }
+}

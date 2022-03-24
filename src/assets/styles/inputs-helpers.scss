@@ -1,0 +1,30 @@
+@import 'text-helpers';
+
+.input-info {
+  display: flex;
+  flex-direction: column;
+  order: 3;
+  width: 100%;
+
+  .errors {
+    @extend .data-sm-medium;
+    color: red;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 8px 0 0 12px;
+
+    div {
+      height: 14px;
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .help-text {
+    @extend .data-sm-medium;
+    height: 14px;
+    margin: 8px 0 0 12px;
+  }
+}
