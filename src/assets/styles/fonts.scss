@@ -9,7 +9,7 @@ $file-path-montserrat: '/fonts/montserrat/';
 @mixin san-font-face($font-family-name, $font-path, $file-path, $file-name) {
   @font-face {
     font-family: $font-family-name;
-    src: url('#{$font-path}#{$file-path}#{$file-name}.otf');
+    src: url('#{$font-path}#{$file-path}#{$file-name}.ttf');
   }
 }
 
@@ -35,7 +35,6 @@ $file-path-montserrat: '/fonts/montserrat/';
   @include san-font-face(bindy-montserrat-medium, $font-path, $file-path-montserrat, 'Montserrat-Medium');
   @include san-font-face(bindy-montserrat-medium-italic, $font-path, $file-path-montserrat, 'Montserrat-MediumItalic');
   @include san-font-face(bindy-montserrat, $font-path, $file-path-montserrat, 'Montserrat-Regular');
-  @include san-font-face(bindy-montserrat-italic, $font-path, $file-path-montserrat, 'Montserrat-RegularItalic');
   @include san-font-face(bindy-montserrat-semibold, $font-path, $file-path-montserrat, 'Montserrat-SemiBold');
   @include san-font-face(
     bindy-montserrat-semibold-italic,

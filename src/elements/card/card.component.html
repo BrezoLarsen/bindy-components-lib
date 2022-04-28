@@ -1,0 +1,17 @@
+<div class="c-bindy-card" (click)="goToDetail()">
+  <div class="c-bindy-card__img"
+      [ngStyle]="
+      animal.imageUrl
+        ? {
+            'background-image': 'url(' + imgUrl + animal.imageUrl + ')'
+          }
+        : { 'background-image': 'url(../assets/img/animal_default.jpg)' }
+    ">
+    <div class="c-bindy-card__img-label">{{animal.name}}</div>
+  </div>
+  <div class="c-bindy-card__text">
+    <p><strong>Sexo:</strong> {{animal.gender}}</p>
+    <p><strong>F. nac:</strong> {{animal.birthDate ? (animal.birthDate | date: 'dd/MM/yyyy') : '-'}}</p>
+  </div>
+</div>
+

@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views';
+import { BindyCardModule } from '../../../src/elements/card/card.module';
 
 const declarations = [AppComponent, HomeComponent];
 @NgModule({
@@ -16,7 +17,8 @@ const declarations = [AppComponent, HomeComponent];
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BindyCardModule,
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

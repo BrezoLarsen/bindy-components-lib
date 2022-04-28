@@ -22,7 +22,7 @@
     "coverage": "jest --coverage",
     "lint": "ng lint components",
     "lint:scss": "stylelint \"src/**/*.scss\"",
-    "start": "ng serve demo --open --hmr demo"
+    "start": "ng serve demo --open --hmr"
   },
   "author": {
     "name": "Brezo A. Lozano",
