@@ -1,6 +1,6 @@
 {
   "name": "@brezolarsen/bindy-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "web components library for the Orca ecosystem",
   "repository": {
     "type": "git",
